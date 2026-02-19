@@ -1,4 +1,6 @@
 import React from 'react'
+import {toast, ToastContainer} from 'react-toastify' // Import React Toastify components
+import 'react-toastify/dist/ReactToastify.css'; // Import React Toastify CSS
 
 function SingUp() {
     return (
@@ -41,12 +43,20 @@ function SingUp() {
                         </div>
 
                     </div>
-                    <div className="mb-3 form-check">
+                    <div className="mb-3 form-check ">
                         <input type="checkbox" className="form-check-input" id="terms" required />
                         <label className="form-check-label" htmlFor="terms">I agree to the terms and conditions</label>
                     </div>
-                    <button type="submit" className="btn btn-primary w-100">Sign Up</button>
+                    <button type="submit" className="btn btn-primary w-100 mt-3">Sign Up</button>
                 </form>
+
+                <ToastContainer 
+                position="top-right" 
+                autoClose={5000} 
+                hideProgressBar={false} 
+                newestOnTop={false} 
+                closeOnClick rtl={false} 
+                pauseOnFocusLoss draggable pauseOnHover theme="light" />
             </div>
 
         </div>
