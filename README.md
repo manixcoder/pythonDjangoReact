@@ -26,3 +26,11 @@ For admin
 
 For create superuser
 `python manage.py createsuperuser`
+
+
+# Install React App
+
+`npx create-react-app@latest AppName`
+
+For frontend run
+`npm start`
