@@ -14,6 +14,7 @@ Website Demo: [https://pypi.org/project/django-cors-headers/](https://pypi.org/p
 
 For create migration
 `python manage.py makemigrations`
+
 For migration
 `python manage.py migrate`
 
