@@ -11,7 +11,7 @@ class UserDetail(models.Model):
 
 class Expense(models.Model):
     user_id = models.ForeignKey(UserDetail, on_delete=models.CASCADE)
-    Amount = models.DecimalField(max_digits=10, decimal_places=2)
-    Description = models.TextField()
-    Date = models.DateField()
+    ExpenseDate = models.DateField(null=True, blank=True)
+    ExpenseItem = models.CharField(max_length=255)
+    ExpenseCost = models.DecimalField(max_digits=10, decimal_places=2)
     CreatedAt = models.DateTimeField(auto_now_add=True)
